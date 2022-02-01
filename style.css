@@ -1,0 +1,74 @@
+:root {
+    --clr-ltgreyblue: hsl(210, 46%, 95%);
+    --clr-greyblue: hsl(212, 23%, 69%);
+    --clr-desatdrkblue: hsl(214, 17%, 51%);
+    --clr-drkgreyblue: hsl(217, 19%, 35%);
+
+    --ff-primary: "Manrope", sans-serif;
+}
+
+/* Box-Sizing Rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Removing default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Mobile Layout */
+body {
+    background-color: var(--clr-ltgreyblue);
+    font-family: var(--ff-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#grid {
+    max-width: 20em;
+    margin: 0 1.5rem;
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+}
+
+.second-square {
+    background-color: white;
+    padding: 2rem 2rem 1rem;
+}
+
+.second-square h4 {
+    color: var(--clr-drkgreyblue);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.second-square p {
+    font-size: 0.825rem;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: 2.5rem;
+    border-radius: 50%;
+}
