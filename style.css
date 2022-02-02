@@ -27,7 +27,7 @@ p {
 
 /* Make images easier to work with */
 img {
-    max-width: 100%;
+    /* max-width: 100%; */
     display: block;
 }
 
@@ -41,26 +41,42 @@ body {
     min-height: 100vh;
 }
 
-#grid {
-    max-width: 20em;
+#container {
+    max-width: 20.5rem; /*328px*/
     margin: 0 1.5rem;
-    display: grid;
-    grid-template-rows: 1fr 1.5fr;
+    display: flex;
+    flex-direction: column;
 }
 
-.second-square {
+.preview-image img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    object-position: 0% 25%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.preview-description {
     background-color: white;
     padding: 2rem 2rem 1rem;
+    border-radius: 0 0 0.5rem 0.5rem;
 }
 
-.second-square h4 {
+.preview-description h4 {
     color: var(--clr-drkgreyblue);
     line-height: 1.5;
     margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.2px;
 }
 
-.second-square p {
-    font-size: 0.825rem;
+.preview-description p {
+    font-size: 0.8125rem;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+    color: var(--clr-desatdrkblue);
+    font-weight: 500;
 }
 
 .profile {
@@ -71,4 +87,27 @@ body {
 .avatar {
     width: 2.5rem;
     border-radius: 50%;
+}
+
+/* DESKTOP LAYOUT */
+/*800px*/
+@media (min-width: 50rem) {
+    #container {
+        min-width: 46em; /*736px*/
+        flex-direction: row;
+    }
+
+    .preview-image img {
+        width: 285px;
+        height: 280px;
+        object-fit: cover;
+        object-position: 0% 0%;
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    .preview-description {
+        max-width: 22rem;
+        border-radius: 0 0.5rem 0.5rem 0;
+        flex: 2;
+    }
 }
