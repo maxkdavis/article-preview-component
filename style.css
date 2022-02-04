@@ -20,7 +20,8 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -43,7 +44,6 @@ body {
 
 #container {
     max-width: 20.5rem; /*328px*/
-    margin: 0 1.5rem;
     display: flex;
     flex-direction: column;
 }
@@ -92,6 +92,7 @@ p.display-text {
     border-radius: 50%;
     display: flex;
     justify-content: center;
+    margin-left: auto;
 }
 
 /*prevents the image from stretching inside the flexbox .share-icon*/
@@ -125,6 +126,66 @@ p.profile-name {
     margin-right: 1rem;
 }
 
+.social-banner {
+    width: 20.5rem; /*328px*/
+    background-color: var(--clr-drkgreyblue);
+    /* padding: 1rem 0; */
+    padding: 1rem 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0.5rem 0.5rem;
+    position: absolute;
+    top: 75%;
+    visibility: hidden;
+}
+
+/*WHEN THE SHARE ICON IS CLICKED THIS 'CLICKED' CLASS WILL BE ADDED */
+.social-banner.clicked {
+    width: 20.5rem; /*328px*/
+    background-color: var(--clr-drkgreyblue);
+    /* padding: 1rem 0; */
+    padding: 1rem 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0.5rem 0.5rem;
+    position: absolute;
+    top: 75%;
+    visibility: visible;
+}
+
+.social-banner p {
+    margin-right: 1rem;
+    font-family: inherit;
+    color: #fff;
+    line-height: 1.25;
+    letter-spacing: 0.25rem;
+}
+
+.social-banner ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.social-banner li {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.social-banner li {
+    color: #fff;
+    font-size: 20px;
+}
+
+.social-banner i {
+    font-style: normal;
+}
+
 /* DESKTOP LAYOUT */
 /*800px*/
 @media (min-width: 50rem) {
@@ -151,9 +212,5 @@ p.profile-name {
         font-size: 1.25rem;
         font-weight: 700;
         letter-spacing: 0.25px;
-    }
-
-    .share-icon {
-        margin-left: auto;
     }
 }
