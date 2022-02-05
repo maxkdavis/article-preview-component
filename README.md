@@ -8,7 +8,7 @@ Thank you for checking out my attempt at this front-end mentor coding challenge.
 
 ## Links
 -   Here is the URL to my solution: https://maxkdavis-article-preview.netlify.app/
--   
+
 ## Screenshots
 <img width="460" alt="Screen Shot 2022-02-05 at 3 10 53 PM" src="https://user-images.githubusercontent.com/7098417/152659499-7fa2ec10-3f5a-45de-8ee5-0b64b8b4a638.png">
 
