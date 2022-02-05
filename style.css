@@ -95,6 +95,16 @@ p.display-text {
     margin-left: auto;
 }
 
+.share-icon button {
+    display: flex;
+    border-radius: 50%;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    align-self: center;
+    justify-content: center;
+}
+
 /*prevents the image from stretching inside the flexbox .share-icon*/
 .share-icon img {
     align-self: center;
@@ -136,7 +146,7 @@ p.profile-name {
     align-items: center;
     border-radius: 0 0 0.5rem 0.5rem;
     position: absolute;
-    top: 75%;
+    top: 73%;
     visibility: hidden;
 }
 
@@ -151,7 +161,7 @@ p.profile-name {
     align-items: center;
     border-radius: 0 0 0.5rem 0.5rem;
     position: absolute;
-    top: 75%;
+    top: 73%;
     visibility: visible;
 }
 
@@ -212,5 +222,16 @@ p.profile-name {
         font-size: 1.25rem;
         font-weight: 700;
         letter-spacing: 0.25px;
+    }
+
+    .social-banner.clicked {
+        top: 53%;
+        left: 65%;
+        border-radius: 0.25rem;
+        padding: 0.5rem 1rem 0.5rem;
+    }
+
+    .social-banner.clicked.secondBtn {
+        display: none;
     }
 }
