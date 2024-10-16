@@ -1,0 +1,14 @@
+/* importing my personal CSS rules to 'reset' the browsers default styling */
+@import url('./reset.css');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf2f8;
+  padding: 4rem 1.5rem;
+}
+
+#content {
+  border: 1px solid red;
+}
