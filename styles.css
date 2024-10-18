@@ -1,14 +1,76 @@
 /* importing my personal CSS rules to 'reset' the browsers default styling */
 @import url('./reset.css');
 
+/* Creating custom variables */
+:root {
+  /* Colors */
+  --dark-gray-blue: hsl(217, 19%, 35%);
+  --dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-gray-blue: hsl(210, 46%, 95%);
+
+  /* Typography */
+  --default-page-font: 'Manrope', sans-serif;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ecf2f8;
-  padding: 4rem 1.5rem;
+  padding: 4.625rem 1.5rem 5rem;
+  font-size: 0.8125rem; /*13px*/
+  font-family: var(--default-page-font);
 }
 
 #content {
-  border: 1px solid red;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 40px 40px -10px var(--dark-blue);
+}
+
+.hero__content {
+  padding: 2rem 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.hero__tagline {
+  font-size: 1rem;
+}
+
+.contact {
+  border: 1px solid blue;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 0 2rem 1.25rem;
+  /* margin-bottom: 20px; */
+}
+
+.contact__img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.contact__name {
+  font-size: 0.8125rem;
+}
+
+.btn__share {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.social-links {
+  display: none;
 }
