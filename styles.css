@@ -71,6 +71,14 @@ body {
   margin-left: auto;
 }
 
-.social-links {
-  display: none;
+.profile {
+  border: 1px solid black;
 }
+
+.profile__wrap {
+  border: 1px solid blue;
+}
+
+/* .social-links {
+  display: none;
+} */
