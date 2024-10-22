@@ -8,9 +8,6 @@
   --dark-blue: hsl(214, 17%, 51%);
   --grayish-blue: hsl(212, 23%, 69%);
   --light-gray-blue: hsl(210, 46%, 95%);
-
-  /* Typography */
-  --default-page-font: 'Manrope', sans-serif;
 }
 
 body {
@@ -29,6 +26,7 @@ body {
   box-shadow: 0px 40px 40px -10px var(--dark-blue);
 }
 
+/******** HERO SECTION **********/
 .hero__content {
   padding: 2rem 2rem 0;
   margin-bottom: 2rem;
@@ -38,26 +36,51 @@ body {
   font-size: 1rem;
 }
 
-.contact {
-  border: 1px solid blue;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+/******** PROFILE SECTION **********/
+.profile {
+  border: 1px solid black;
+  padding: 20px 32px;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
-  padding: 0 2rem 1.25rem;
-  /* margin-bottom: 20px; */
 }
 
-.contact__img {
+.profile__content-wrap {
+  /* border: 1px solid blue; */
+}
+
+.content__info-wrap {
+  display: flex;
+}
+
+.content__info-sub-wrap {
+  /* border: 1px solid purple; */
+}
+
+.content__info__img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   margin-right: 16px;
 }
 
-.contact__name {
-  font-size: 0.8125rem;
+.content__info__name {
+  color: #48556a;
+  font-family: Manrope;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 153.846% */
+  letter-spacing: 0.122px;
+}
+
+.content__info__date {
+  color: #9daec2;
+  font-family: Manrope;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 153.846% */
+  letter-spacing: 0.122px;
 }
 
 .btn__share {
@@ -71,14 +94,10 @@ body {
   margin-left: auto;
 }
 
-.profile {
-  border: 1px solid black;
-}
-
-.profile__wrap {
-  border: 1px solid blue;
-}
-
-/* .social-links {
+.content__social-links-wrap {
+  display: flex;
   display: none;
-} */
+  gap: 21px;
+  background: lightcoral;
+  padding: 22px 0px 22px 32px;
+}
