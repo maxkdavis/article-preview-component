@@ -116,14 +116,6 @@ body {
   display: none;
 }
 
-.dark {
+.dark-background {
   background-color: var(--dark-gray-blue);
-}
-
-.dark-btn {
-  background-color: hsl(214, 17%, 51%);
-}
-
-path {
-  fill: white;
 }
