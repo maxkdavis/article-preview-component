@@ -98,6 +98,7 @@ body {
 
 .content__btn-wrap {
   padding: 1rem 2rem 1rem 1rem;
+  border-bottom-right-radius: 10px;
 }
 
 .btn__share {
@@ -115,6 +116,14 @@ body {
   display: none;
 }
 
-/* .dark {
-  background-color: red;
-} */
+.dark {
+  background-color: var(--dark-gray-blue);
+}
+
+.dark-btn {
+  background-color: hsl(214, 17%, 51%);
+}
+
+path {
+  fill: white;
+}
