@@ -21,10 +21,10 @@ btnShareEl.addEventListener('click', function () {
   contentBtnContainerEl.classList.toggle('dark-background');
 
   if (contentBtnContainerEl.classList.contains('dark-background')) {
-    document.getElementById('path1').style.fill = 'white';
+    document.getElementById('path-share').style.fill = 'white';
     btnShareEl.style.backgroundColor = 'var(--dark-blue)';
   } else {
-    document.getElementById('path1').style.fill = '#6E8098';
+    document.getElementById('path-share').style.fill = '#6E8098';
     btnShareEl.style.backgroundColor = 'var(--light-gray-blue)';
   }
 });

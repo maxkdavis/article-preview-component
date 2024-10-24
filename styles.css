@@ -28,11 +28,27 @@ body {
 /******** HERO SECTION **********/
 .hero__content {
   padding: 2rem 2rem 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .hero__tagline {
   font-size: 1rem;
+  color: #48556a;
+
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.2px;
+  margin-bottom: 0.75rem;
+}
+
+.hero__text {
+  color: #6e8098;
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px; /* 153.846% */
+  letter-spacing: 0.122px;
 }
 
 /******** PROFILE SECTION **********/
@@ -97,6 +113,9 @@ body {
 }
 
 .content__btn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1rem 2rem 1rem 1rem;
   border-bottom-right-radius: 10px;
 }
