@@ -1,140 +1,85 @@
 /* importing my personal CSS rules to 'reset' the browsers default styling */
 @import url('./reset.css');
 
-/* Creating custom variables */
 :root {
   /* Colors */
-  --dark-gray-blue: hsl(217, 19%, 35%);
-  --dark-blue: hsl(214, 17%, 51%);
+  --very-dark-gray-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
   --grayish-blue: hsl(212, 23%, 69%);
-  --light-gray-blue: hsl(210, 46%, 95%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+
+  /* Fonts */
+  --ff-base: 'Manrope', sans-serif;
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+
+ul {
+  list-style: none;
 }
 
 body {
+  font-family: var(--ff-base);
+  font-size: 0.8125rem; /*13 px*/
+  padding-inline: 1.5rem; /*shorthand to set left and right padding*/
+  color: var(--desaturated-dark-blue);
+  background-color: var(--light-grayish-blue);
+
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ecf2f8;
-  padding: 4.625rem 1.5rem 5rem;
-  font-family: var(--default-page-font);
 }
 
-#content {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 40px 40px -10px var(--dark-blue);
+/* Leaving out for now as there's only one direct child element of the body and it doesn't seem to be doing anything */
+/* body > * {
+  flex-grow: 1;
+} */
+
+/* ARTICLE SECTION */
+.article {
+  background-color: #fff;
+  outline: 2px dotted seagreen;
+  max-width: 45rem; /*720px*/
+  /*mobile-first so not sure I need this*/
+  /* display: flex;
+  flex-direction: column; */
 }
 
-/******** HERO SECTION **********/
-.hero__content {
-  padding: 2rem 2rem 0;
-  margin-bottom: 1.5rem;
+.article__image {
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.hero__tagline {
+/* .img__wrapper {
+  background: url(./images/drawers.jpg) lightgray 0px 0px / 100% 100% no-repeat;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+} */
+
+.article__body {
+  padding: 2.25rem 2rem 2rem 2rem;
+}
+
+.article__info {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-block-start: 2rem;
+  padding-block-end: 1.25rem;
+  padding-inline: 2rem;
+}
+
+.article__heading {
   font-size: 1rem;
-  color: #48556a;
-
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 24px; /* 150% */
   letter-spacing: 0.2px;
-  margin-bottom: 0.75rem;
 }
 
-.hero__text {
-  color: #6e8098;
-  font-family: 'Manrope', sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 20px; /* 153.846% */
-  letter-spacing: 0.122px;
-}
-
-/******** PROFILE SECTION **********/
-.profile {
-  display: flex;
-  align-items: center;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.profile__content-wrap {
-  width: 100%;
-}
-
-.content__info-wrap {
-  display: flex;
-  align-items: center;
-  padding-left: 2rem;
-  /* padding-bottom: 1.25rem; */
-}
-
-.content__info__img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 16px;
-}
-
-.content__info-sub-wrap {
-  font-family: 'Manrope', sans-serif;
-  font-size: 0.8125rem; /*13px*/
-  line-height: 20px;
-  letter-spacing: 0.122px;
-}
-
-.content__info__name {
-  color: #48556a;
-  font-size: 0.8125rem; /*13px*/
-  font-weight: 700;
-}
-
-.content__info__date {
-  color: #9daec2;
-  font-weight: 500;
-}
-
-.content__social-links-wrap {
-  display: flex;
-  gap: 21px;
-  border-bottom-left-radius: 10px;
-  background: var(--dark-gray-blue);
-  padding: 22px 0px 22px 32px;
-}
-
-.social-links__text {
-  color: #9daec2;
-  font-family: 'Manrope', sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 20px;
-  letter-spacing: 5px;
-}
-
-.content__btn-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 2rem 1rem 1rem;
-  border-bottom-right-radius: 10px;
-}
-
-.btn__share {
-  width: 32px;
-  height: 32px;
-  border: none;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* utility class when clicked */
-.display-toggle {
-  display: none;
-}
-
-.dark-background {
-  background-color: var(--dark-gray-blue);
+.article__heading,
+.article__author-name {
+  font-weight: var(--fw-bold);
+  color: var(--very-dark-gray-blue);
 }

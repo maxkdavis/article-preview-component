@@ -1,26 +1,25 @@
+/*  RESET  */
+
+/* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
+/* Remove default margin */
 * {
   margin: 0;
 }
 
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5; /* Add accessible line-height */
+  -webkit-font-smoothing: antialiased; /* Improve text rendering */
 }
 
+/* Improve media defaults */
 img,
 picture,
 video,
@@ -29,6 +28,8 @@ svg {
   display: block;
   max-width: 100%;
 }
+
+/* Inherit fonts for form controls */
 input,
 button,
 textarea,
@@ -36,7 +37,21 @@ select {
   font: inherit;
 }
 
-/* Set core body defaults */
-body {
-  min-height: 100vh;
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
 }
